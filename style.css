@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px red#236(0, 0, 0, 0.2);
+}
+
+/* Estilos para el encabezado */
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #57c6e1;
+}
+
+/* Estilos para el interruptor de tema */
+.theme-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.theme-switch label {
+  margin-right: 10px;
+}
+
+#cambio {
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de tareas */
+.task-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#Input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#addTask {
+  padding: 10px 20px;
+  background-color: #57c6e1;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Estilos para la lista de tareas */
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #3e3e3e;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para tareas completadas */
+.task-list .completed {
+  background-color: #2b2b2b;
+  color: #888888;
+  text-decoration: line-through;
+}
+
+/* Estilos para el estado de las tareas */
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el tema oscuro */
+.theme-dark {
+  background-image: url("./peakpx.jpg");
+  /* Agrega la ruta de la imagen aquí */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Contenedor principal -->
+      <h1>to do list angelo maestro en programacion</h1>
+      <!-- Encabezado de la página -->
+      <div class="theme-switch">
+        <!-- Contenedor para el interruptor de tema -->
+        <label for="theme-toggle">transfor:</label>
+
+        <input type="checkbox" id="theme-toggle" />
+      </div>
+      <div class="task-form">
+        <input type="text" id="Input" placeholder="Agregar nueva tarea..." />
+        <!-- Entrada de texto para ingresar nuevas tareas -->
+        <button id="addTask">Agregar</button>
+        <!-- Botón para agregar tareas -->
+      </div>
+      <div class="task-list">
+        <ul id="tasks"></ul>
+        <!-- Lista no ordenada para mostrar las tareas -->
+      </div>
+      <div class="status">
+        <!-- Contenedor para el estado de las tareas -->
+        <p>Pendientes: <span id="pendingCount">0</span></p>
+        <!-- Párrafo para mostrar la cantidad de tareas pendientes -->
+        <p>Completadas: <span id="completedCount">0</span></p>
+        <!-- Párrafo para mostrar la cantidad de tareas completadas -->
+      </div>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
